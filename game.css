@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.hero-img-block{
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 32px;
+    z-index: 2;
+}
+.hero-img{
+    width: 1152px;
+    height: 896px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1,1);
+}
+.back-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 64px;
+}
+#restartBtn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+#fsBtn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#final-timer-text{
+    position: absolute;
+    font-family: 'Bungee Spice', cursive;
+    font-size: 100pt;
+    text-align: center;
+    width: 100%;
+}
+#score{
+    font-family: 'Bungee Spice', cursive;
+    font-size: x-large;
+}
+.hit{
+    left:-128px;
+    animation: hit 0.3s steps(3);
+}
+@keyframes hit {
+    from{
+        top: -384px;
+        left: -128px;
+    }
+    to{
+        top: -384px;
+        left: -512px;
+    }
+}
+.hit-left{
+    left:-768px;
+    animation: hit-left 0.3s steps(3);
+}
+@keyframes hit-left {
+    from{
+        top: -384px;
+        left: -768px;
+    }
+    to{
+        top: -384px;
+        left: -1152px;
+    }
+}
+.jump{
+    left:-128px;
+    animation: jump-sprite 0.5s steps(8);
+}
+.block{
+    animation: jump 0.5s steps(8);
+}
+@keyframes jump {
+    from{
+        bottom: 300px;
+    }
+    to{
+        bottom: 64px;
+    }
+}
+@keyframes jump-sprite {
+    from{
+        top: -256px;
+        left: -128px;
+    }
+    to{
+        top: -256px;
+        left: -1152px;
+    }
+}
+.jump-left{
+    left:-128px;
+    animation: jump-left 0.5s steps(8);
+}
+@keyframes jump-left {
+    from{
+        top: -256px;
+        left: -128px;
+    }
+    to{
+        top: -256px;
+        left: -1152px;
+    }
+}
+.mobile-button-jump {
+    width: 64px;
+    height: 64px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 64px);
+    overflow: hidden;
+
+}
+.mobile-button-attack {
+    width: 64px;
+    height: 64px;
+    border: 2px solid blue;
+    position: absolute;
+    top: calc(50% - 64px);
+    border-radius: 50%;
+    right: 0;
+    overflow: hidden;
+}
+.img-for-button-jump{
+    width: 576px;
+    height: 448px;
+    position: absolute;
+    left: -256px;
+    top: -128px;
+}
+.img-for-button-attack{
+    width: 576px;
+    height: 448px;
+    position: absolute;
+    left: -128px;
+    top: -192px;
+}
+
+
+
+

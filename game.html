@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-wrapper">
+        <div id="score">0</div>
+        <img src="hero_img/refresh.png" id="restartBtn" alt="перезагрузка"/>
+        <img src="hero_img/fullscreen.png" id="fsBtn" alt="полный экран"/>
+        <div id="final-timer">
+            <p id="final-timer-text"></p>
+        </div>
+        <div id="button-jump" class="mobile-button-jump">
+            <img class="img-for-button-jump" src="hero_img/hero_sprite.png" alt="jump">
+        </div>
+        <div id="button-attack" class="mobile-button-attack">
+            <img class="img-for-button-attack" src="hero_img/hero_sprite.png" alt="attack">
+        </div>
+        <div class="hero-img-block">
+            <img id="hero-img" class="hero-img" src="hero_img/hero_sprite.png" alt="hero">
+        </div>
+    </div>
+<script src="gameWizard.js"></script>
+</body>
+</html>
